@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Я веб-дизайнер, создаю уникальные проекты с нуля. Скидки для первых заказчиков.">
+    <meta name="keywords" content="веб-дизайнер, создание сайтов, уникальные проекты, веб-дизайн">
+    <meta name="author" content="Ваше имя">
+    <meta property="og:title" content="Веб-дизайнер — Уникальные проекты">
+    <meta property="og:description" content="Профессиональный веб-дизайнер. Создаю сайты с нуля. Скидка 20% для первых 5 заказчиков.">
+    <meta property="og:image" content="img/1.webp">
+    <meta property="og:url" content="https://вашсайт.com">
+    <meta name="twitter:title" content="Веб-дизайнер — Уникальные проекты">
+    <meta name="twitter:description" content="Профессиональный веб-дизайнер. Создаю сайты с нуля. Скидка 20% для первых 5 заказчиков.">
+    <meta name="twitter:image" content="img/1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Web designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+</head>
+<body>
+    <!-- Анимация при входе -->
+    <div class="sticky-text">
+        Discount until Desember 31st - 20% off, hurry up!
+    </div>
+
+    <!-- Шапка страницы -->
+    <header>
+        <div class="logo">
+            <img src="img/1.webp" alt="Логотип" width="200" height="200">
+        </div>
+        <div class="about-me">
+            <h1>About me</h1>
+            <p>I am a web designer and will create a website for you just as you wish: stylish, easy, and creative. You can have no doubts about my experience and work — everything will be done to the highest level.</p>
+        </div>
+    </header>
+
+    <!-- Галерея -->
+    <section class="gallery">
+        <div class="main-image">
+            <img src="img/2.jpg" alt="Главное изображение">
+            <div class="overlay-text">
+                I work with HTML, JavaScript, and CSS. As you can see, this website was created to the highest level, with attention to every detail. You can contact me, and I will do everything for a small budget. Contact details are below
+            </div>
+        </div>
+        <div class="small-images">
+            <img src="img/3.jpg" alt="Изображение 1">
+            <img src="img/4.jpg" alt="Изображение 2">
+            <img src="img/5.jpg" alt="Изображение 3">
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+        <h2>Reviews</h2>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <form id="review-form" class="review-form">
+            <input type="text" id="name" placeholder="You name" required>
+            <textarea id="comment" placeholder="You reviews" required></textarea>
+            <button type="submit" disabled>Send</button>
+        </form>
+
+        <div id="average-rating"></div> <!-- Средняя оценка -->
+        <div id="reviews-list"></div> <!-- Список отзывов -->
+        <button id="load-more">Show more</button>
+    </section>
+    <!-- Контакты -->
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: wixysky007@gmail.com</p>
+        <p>Number: +996 999 69 00 42</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
